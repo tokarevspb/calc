@@ -17,7 +17,6 @@ public class Main {
         int b;
         boolean aIsInt;
         boolean bIsInt;
-        String result;
         try {
             a = Integer.parseInt(arr[0]);
             aIsInt = true;
@@ -40,7 +39,7 @@ public class Main {
         if ((a < 1) || (a > 10) || (b < 1) || (b > 10)){
             throw new Exception();
         }
-        result = switch (arr[1]) {
+        String result = switch (arr[1]) {
             case ("+") -> String.valueOf(a + b);
             case ("-") -> String.valueOf(a - b);
             case ("*") -> String.valueOf(a * b);
